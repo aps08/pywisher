@@ -104,7 +104,7 @@ celerybeat.pid
 # folder and files
 backup/
 *.csv
-*.json
+client*.json
 
 # Environments
 .env
