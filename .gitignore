@@ -103,8 +103,8 @@ celerybeat.pid
 
 # folder and files
 backup/
-*.csv
-client*.json
+src/*.csv
+src/*.json
 
 # Environments
 .env
