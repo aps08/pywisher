@@ -1,7 +1,7 @@
 """
 This module is responsible for creating the service object for connecting to
 google cloud APIs.
-Uses: client_secrets.json file
+Uses: secrets.json file, which contains the service account
 """
 import sys
 
