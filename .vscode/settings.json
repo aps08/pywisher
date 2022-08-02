@@ -9,4 +9,9 @@
     ],
     "python.linting.lintOnSave": true,
     "python.linting.enabled": true,
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
 }

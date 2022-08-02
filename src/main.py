@@ -1,5 +1,6 @@
-"""doc string"""
+from datetime import datetime, timedelta
 
-
-if __name__ == "__main__":
-    print("run")
+today = datetime.today()
+yesterday = today - timedelta(days=1)
+print(today)
+print(yesterday)

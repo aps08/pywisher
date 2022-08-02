@@ -105,6 +105,7 @@ celerybeat.pid
 backup/
 src/*.csv
 src/*.json
+src/*.log
 
 # Environments
 .env
