@@ -13,7 +13,7 @@ from os import path
 
 sys.dont_write_bytecode = True
 
-logging.config.fileConfig("src/logging.conf")
+logging.config.fileConfig("logging.conf")
 # pylint:disable=unused-private-member,unnecessary-pass
 class EmailService:
     """class doc string"""
