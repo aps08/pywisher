@@ -1,6 +1,8 @@
-from datetime import datetime, timedelta
-
-today = datetime.today()
-yesterday = today - timedelta(days=1)
-print(today)
-print(yesterday)
+"""
+delete pywisher.log if exist
+save record - returns name
+use the save to read the record
+check if some one is having brithday today
+if there is a birthday today.
+delete records.csv if exist
+"""
