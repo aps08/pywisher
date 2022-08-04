@@ -11,7 +11,6 @@ from imaplib import IMAP4_SSL
 from os import path
 
 sys.dont_write_bytecode = True
-
 logging.config.fileConfig("src/logging.conf")
 
 
@@ -56,10 +55,10 @@ class GetAttachMentService:
         argument:
             byte_message: email message in bytes.
         return:
-            file_name: name of file in attachment.
+            file_path: path of file in attachment.
 
         """
-        file_name = None
+        file_path = None
         try:
             logging.info(" Converting bytes data to normal string.")
             raw_message = message_from_bytes(byte_message)
@@ -74,7 +73,7 @@ class GetAttachMentService:
         except Exception as save_att_err:
             logging.error(" Error in %s\n%s", self.__save_attachment.__name__, save_att_err)
             raise save_att_err
-        return file_name
+        return file_path
 
     def save(self, key: str) -> str:
         """
@@ -84,15 +83,15 @@ class GetAttachMentService:
         argument:
             key: subject, for which you want to search email.
         return:
-            name: saved file name.
+            path: path of saved file.
         """
-        name = None
+        path_ = None
         try:
             logging.info(" Save attachment process started.")
             data = self.__get_email_in_bytes(key)
-            name = self.__save_attachment(data[0][1])
+            path_ = self.__save_attachment(data[0][1])
             logging.info(" Save attachment process completed. ")
         except Exception as start_err:
             logging.error(" Error in %s\n%s", self.save.__name__, start_err)
             raise start_err
-        return name
+        return path_

@@ -8,10 +8,10 @@ import logging
 import logging.config
 import smtplib
 import sys
-from email.message import EmailMessage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 sys.dont_write_bytecode = True
-
 logging.config.fileConfig("src/logging.conf")
 
 
@@ -26,7 +26,7 @@ class SendEmailService:
         self._port = 587
         logging.info(" %s class is initialised.", SendEmailService.__name__)
 
-    def __create_message(self, email_to: str, subject: str) -> EmailMessage:
+    def __create_message(self, email_to: str, subject: str) -> MIMEMultipart:
         """
         Creates the emails for sending.
 
@@ -40,19 +40,20 @@ class SendEmailService:
         create_message = None
         try:
             logging.info(" Creating a message.")
-            create_message = EmailMessage()
+            create_message = MIMEMultipart()
             create_message["From"] = self._username
             create_message["To"] = email_to
             create_message["Subject"] = subject
-            mail_content = "Custom mail, content"
-            create_message.set_content(mail_content)
+            file_obj = open(file="templates/sample.html", mode="r", encoding="utf-8")
+            mail_content = file_obj.read()
+            create_message.attach(MIMEText(mail_content, "html"))
         except Exception as cre_err:
             logging.error(" Error in %s\n%s", self.__create_message.__name__, cre_err)
             raise cre_err
         logging.info(" Returning the message")
         return create_message
 
-    def __send__created_email(self, wish_message: EmailMessage, email_to: str) -> None:
+    def __send__created_email(self, wish_message: MIMEMultipart, email_to: str) -> None:
         """
         Create a smtp session, and sends the email.
 
@@ -65,7 +66,7 @@ class SendEmailService:
             session = smtplib.SMTP(self._domain, self._port)
             session.starttls()
             session.login(self._username, self._password)
-            session.sendmail(self._username, email_to, wish_message.as_bytes())
+            session.sendmail(self._username, email_to, wish_message.as_string())
             logging.info(" Email sent, quiting the session.")
             session.quit()
         except Exception as sen_cre_err:
