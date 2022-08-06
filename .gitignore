@@ -56,7 +56,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -100,12 +99,6 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-
-# folder and files
-backup/
-src/*.csv
-src/*.json
-src/*.log
 
 # Environments
 .env
