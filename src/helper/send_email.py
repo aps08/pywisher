@@ -26,7 +26,7 @@ class SendEmailService:
         self._port = 587
         logging.info(" %s class is initialised.", SendEmailService.__name__)
 
-    def __create_message(self, email_to: str, subject: str) -> MIMEMultipart:
+    def __create_message(self, emails_to: str, subject: str) -> MIMEMultipart:
         """
         Creates the emails for sending.
 
@@ -42,10 +42,11 @@ class SendEmailService:
             logging.info(" Creating a message.")
             create_message = MIMEMultipart()
             create_message["From"] = self._username
-            create_message["To"] = email_to
+            create_message["To"] = emails_to
             create_message["Subject"] = subject
-            file_obj = open(file="templates/sample.html", mode="r", encoding="utf-8")
-            mail_content = file_obj.read()
+            mail_content = ""
+            with open(file="templates/sample.html", mode="r", encoding="utf-8") as file_obj:
+                mail_content = file_obj.read()
             create_message.attach(MIMEText(mail_content, "html"))
         except Exception as cre_err:
             logging.error(" Error in %s\n%s", self.__create_message.__name__, cre_err)
@@ -73,14 +74,14 @@ class SendEmailService:
             logging.error(" Error in %s\n%s", self.__send__created_email.__name__, sen_cre_err)
             raise sen_cre_err
 
-    def send(self, receiver: str, wtype: str) -> None:
+    def send(self, receiver: str, wtype: str = "Happy Birthday") -> None:
         """
         This is the only public function,
         from where you can trigger this class.
 
         argument:
             receiver: receiver of the email.
-            wtype: wish type
+            wtype: wish type, default birthday
         """
         try:
             logging.info(" Sending email process started.")
