@@ -12,7 +12,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 sys.dont_write_bytecode = True
-logging.config.fileConfig("src/logging.conf")
+logging.config.fileConfig("logging.conf")
 
 
 class SendEmailService:
@@ -74,7 +74,7 @@ class SendEmailService:
             logging.error(" Error in %s\n%s", self.__send__created_email.__name__, sen_cre_err)
             raise sen_cre_err
 
-    def send(self, receiver: str, wtype: str = "Happy Birthday") -> None:
+    def send(self, receiver: str, wtype: str) -> None:
         """
         This is the only public function,
         from where you can trigger this class.
@@ -84,10 +84,9 @@ class SendEmailService:
             wtype: wish type, default birthday
         """
         try:
-            logging.info(" Sending email process started.")
             created_message = self.__create_message(receiver, wtype)
-            self.__send__created_email(created_message, self._username)
-            logging.info(" Sending email process completed.")
+            self.__send__created_email(created_message, receiver)
         except Exception as send_err:
             logging.error(" Error in %s\n%s", self.send.__name__, send_err)
             raise send_err
+        logging.shutdown()

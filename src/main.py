@@ -1,16 +1,14 @@
 """
-save record - returns name
-use the save to read the record
-check if some one is having brithday today
-if there is a birthday today.
-delete records.csv if exist
+This is main module, which inherits and uses the other
+two modules named as GetAttachMentService and SendEmailService.
 """
+
 import logging
 import logging.config
 import os
 import sys
-import time
 from datetime import datetime
+from io import StringIO
 from typing import Tuple
 
 import pandas as pd
@@ -18,7 +16,7 @@ import pandas as pd
 from helper import GetAttachMentService, SendEmailService
 
 sys.dont_write_bytecode = True
-logging.config.fileConfig("src/logging.conf")
+logging.config.fileConfig("logging.conf")
 
 
 class Pywisher(GetAttachMentService, SendEmailService):
@@ -29,12 +27,12 @@ class Pywisher(GetAttachMentService, SendEmailService):
 
     def __init__(self, username: str, password: str):
         """Constructor"""
+        self.__now = datetime.now()
+        logging.info(
+            " %s class is initailised. Date %s", Pywisher.__name__, self.__now.strftime("%d-%m-%Y")
+        )
         GetAttachMentService.__init__(self, username, password)
         SendEmailService.__init__(self, username, password)
-        file = "src/records.csv"
-        if os.path.exists(file):
-            os.remove(file)
-        logging.info(" Pywisher class is initailised.")
 
     def __download_and_read(self, key: str) -> Tuple[str, pd.DataFrame]:
         """
@@ -48,17 +46,15 @@ class Pywisher(GetAttachMentService, SendEmailService):
             data_frame: pandas dataframe generated after
                         reading the donwloaded file.
         """
-        file_path, data_frame = None, None
+        data_frame = None
         try:
-            file_path = self.save(key)
-            logging.info(" Waiting 3 seconds for the file to be generated.")
-            time.sleep(3)
-            data_frame = pd.read_csv(file_path, sep=",", index_col="id")
+            file_content = StringIO(self.save(key))
+            logging.info(" Creating pandas dataframe using the file content recieved.")
+            data_frame = pd.read_csv(file_content, sep=",", index_col="id")
         except Exception as down_read_err:
             logging.error(" Error in %s\n%s", self.__download_and_read.__name__, down_read_err)
             raise down_read_err
-        logging.info(" Getting file path and data as a pandas dataframe.")
-        return file_path, data_frame
+        return data_frame
 
     def __process_file(self, data: pd.DataFrame) -> None:
         """
@@ -69,38 +65,37 @@ class Pywisher(GetAttachMentService, SendEmailService):
             data: pandas dataframe
         """
         try:
-            self.__remove_file("src/records.csv")
             day = datetime.now().day
             month = datetime.now().month
-            logging.info(" Creating new column named email.")
             data["dob"] = pd.to_datetime(data["dob"], format="%d-%m-%Y")
             condition = (day == data["dob"].dt.day.astype(int)) & (
                 month == data["dob"].dt.month.astype(int)
             )
+            logging.info(" Creating new column named sendemail.")
+            logging.info(" sendemail column is True if birthday is today.")
             data["sendemail"] = condition
             itr_data = data.query("sendemail==True")
             nums = len(itr_data)
             if nums > 0:
-                logging.info(" Nedd to send email to %s people.", nums)
                 for index, row in itr_data.iterrows():
-                    logging.info(" Sending email to %s", index)
+                    logging.info(" Sending email to ID %s", index)
                     self.send(row["email"], "Happy Birthday " + row["firstname"])
-                logging.info(" Sent the email to everyone having birthday today.")
             else:
                 logging.info(" No birthday today.")
         except Exception as proc_err:
             raise proc_err
 
-    def __remove_file(self, path: str) -> None:
+    def __delete_logger_weekly(self) -> None:
         """
-        Delete the csv file after operation is done.
-
-        argument:
-            path: where the file is present.
+        Deletes the log file on every sunday.
         """
-        if os.path.exists(path):
-            logging.info(" Removing the csv file, which was downloaded.")
-            os.remove(path)
+        try:
+            log_file = "pywisher.log"
+            today = self.__now.strftime("%A")
+            if today == "Sunday" and os.path.exists(log_file):
+                os.remove(log_file)
+        except Exception as del_err:
+            raise del_err
 
     def start(self, search_subject_key: str):
         """
@@ -111,9 +106,10 @@ class Pywisher(GetAttachMentService, SendEmailService):
         """
         try:
             logging.info(" Triggering the whole process.")
-            path, data = self.__download_and_read(search_subject_key)
+            data = self.__download_and_read(search_subject_key)
             self.__process_file(data)
-            self.__remove_file(path)
+            logging.shutdown()
+            self.__delete_logger_weekly()
             logging.info(" Whole process completed successfully.")
         except Exception as start_err:
             logging.error(" Error in %s\n%s", self.start.__name__, start_err)
@@ -121,5 +117,8 @@ class Pywisher(GetAttachMentService, SendEmailService):
 
 
 if __name__ == "__main__":
-    Pywisher = Pywisher("anoopprsingh@gmail.com", "tncjcbhpbrscxswu")
-    Pywisher.start("qEjXyA3SVhN3FEn")
+    key_id = os.environ.get("KEY_ID")
+    key_secret = os.environ.get("KEY_SECRET")
+    search_key = os.environ.get("SEARCH_KEY")
+    Pywisher = Pywisher(key_id, key_secret)
+    Pywisher.start(search_key)

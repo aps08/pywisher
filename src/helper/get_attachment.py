@@ -1,5 +1,5 @@
 """
-This module is responsible for downloading the
+This module is responsible for downloading the content
 attachment from gmail, which contains the record.
 """
 
@@ -8,14 +8,16 @@ import logging.config
 import sys
 from email import message_from_bytes
 from imaplib import IMAP4_SSL
-from os import path
 
 sys.dont_write_bytecode = True
-logging.config.fileConfig("src/logging.conf")
+logging.config.fileConfig("logging.conf")
 
 
 class GetAttachMentService:
-    """This class is responsible for downloading the attachment."""
+    """
+    This class is responsible for downloading
+    content of the attachment.
+    """
 
     def __init__(self, username: str, password: str):
         """Constructor"""
@@ -55,25 +57,24 @@ class GetAttachMentService:
         argument:
             byte_message: email message in bytes.
         return:
-            file_path: path of file in attachment.
-
+            file_content: content of the attachment.
         """
-        file_path = None
+        file_content = ""
         try:
             logging.info(" Converting bytes data to normal string.")
             raw_message = message_from_bytes(byte_message)
             for part in raw_message.walk():
                 file_name = part.get_filename()
                 if bool(file_name):
-                    file_path = path.join("src/", file_name)
-                    logging.info(" Saving donwload file at %s", file_path)
-                    with open(file_path, "wb") as file:
-                        file.write(part.get_payload(decode=True))
-            logging.info(" Saved file successfully")
+                    logging.info(" Converting byte to string.")
+                    byte_data = part.get_payload(decode=True)
+                    if len(byte_data) > 1:
+                        file_content = file_content + byte_data.decode("UTF-8")
+            logging.info(" Extracted content of the file successfully.")
         except Exception as save_att_err:
             logging.error(" Error in %s\n%s", self.__save_attachment.__name__, save_att_err)
             raise save_att_err
-        return file_path
+        return file_content
 
     def save(self, key: str) -> str:
         """
@@ -83,15 +84,14 @@ class GetAttachMentService:
         argument:
             key: subject, for which you want to search email.
         return:
-            path: path of saved file.
+            content: content of attachment.
         """
-        path_ = None
+        content = None
         try:
-            logging.info(" Save attachment process started.")
             data = self.__get_email_in_bytes(key)
-            path_ = self.__save_attachment(data[0][1])
-            logging.info(" Save attachment process completed. ")
+            content = self.__save_attachment(data[0][1])
         except Exception as start_err:
             logging.error(" Error in %s\n%s", self.save.__name__, start_err)
             raise start_err
-        return path_
+        logging.shutdown()
+        return content
