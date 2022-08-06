@@ -33,3 +33,9 @@ jobs:
           KEY_SECRET: ${{ secrets.KEY_SECRET }}
           SEARCH_KEY: ${{ secrets.SEARCH_KEY }}
         run: python src/main.py
+
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
