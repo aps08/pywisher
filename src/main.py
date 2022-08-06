@@ -27,8 +27,8 @@ class Pywisher(GetAttachMentService, SendEmailService):
 
     def __init__(self, username: str, password: str):
         """Constructor"""
-        self.__delete_logger_weekly()
         self.__now = datetime.now()
+        self.__delete_logger_weekly()
         logging.info(
             " %s class is initailised. Date %s", Pywisher.__name__, self.__now.strftime("%d-%m-%Y")
         )
