@@ -27,12 +27,25 @@ class Pywisher(GetAttachMentService, SendEmailService):
 
     def __init__(self, username: str, password: str):
         """Constructor"""
+        self.__delete_logger_weekly()
         self.__now = datetime.now()
         logging.info(
             " %s class is initailised. Date %s", Pywisher.__name__, self.__now.strftime("%d-%m-%Y")
         )
         GetAttachMentService.__init__(self, username, password)
         SendEmailService.__init__(self, username, password)
+        
+    def __delete_logger_weekly(self) -> None:
+        """
+        Deletes the log file on every sunday.
+        """
+        try:
+            log_file = "pywisher.log"
+            today = self.__now.strftime("%A")
+            if today == "Saturday" and os.path.exists(log_file):
+                os.remove(log_file)
+        except Exception as del_err:
+            raise del_err
 
     def __download_and_read(self, key: str) -> Tuple[str, pd.DataFrame]:
         """
@@ -84,18 +97,6 @@ class Pywisher(GetAttachMentService, SendEmailService):
                 logging.info(" No birthday today.")
         except Exception as proc_err:
             raise proc_err
-            
-    def __delete_logger_weekly(self) -> None:
-        """
-        Deletes the log file on every sunday.
-        """
-        try:
-            log_file = "pywisher.log"
-            today = self.__now.strftime("%A")
-            if today == "Saturday" and os.path.exists(log_file):
-                os.remove(log_file)
-        except Exception as del_err:
-            raise del_err
 
     def start(self, search_subject_key: str):
         """
@@ -108,7 +109,6 @@ class Pywisher(GetAttachMentService, SendEmailService):
             logging.info(" Triggering the whole process.")
             data = self.__download_and_read(search_subject_key)
             self.__process_file(data)
-            self.__delete_logger_weekly()
             logging.info(" Whole process completed successfully.")
         except Exception as start_err:
             logging.error(" Error in %s\n%s", self.start.__name__, start_err)
