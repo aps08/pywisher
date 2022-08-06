@@ -85,18 +85,6 @@ class Pywisher(GetAttachMentService, SendEmailService):
         except Exception as proc_err:
             raise proc_err
 
-    def __delete_logger_weekly(self) -> None:
-        """
-        Deletes the log file on every sunday.
-        """
-        try:
-            log_file = "pywisher.log"
-            today = self.__now.strftime("%A")
-            if today == "Sunday" and os.path.exists(log_file):
-                os.remove(log_file)
-        except Exception as del_err:
-            raise del_err
-
     def start(self, search_subject_key: str):
         """
         Function is responsible for triggering the whole process.
@@ -108,12 +96,11 @@ class Pywisher(GetAttachMentService, SendEmailService):
             logging.info(" Triggering the whole process.")
             data = self.__download_and_read(search_subject_key)
             self.__process_file(data)
-            logging.shutdown()
-            self.__delete_logger_weekly()
             logging.info(" Whole process completed successfully.")
         except Exception as start_err:
             logging.error(" Error in %s\n%s", self.start.__name__, start_err)
             raise start_err
+        logging.shutdown()
 
 
 if __name__ == "__main__":
