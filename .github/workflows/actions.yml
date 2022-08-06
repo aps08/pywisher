@@ -39,7 +39,7 @@ jobs:
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.name "aps08"
           ls -l
-          git add .
+          git add pywisher.log
           git commit -m "Commit from Github Actions"
           git push
 
