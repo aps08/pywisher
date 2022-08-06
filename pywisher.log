@@ -1,1 +1,9 @@
-2022-08-06 12:41:01 - INFO -  Whole process completed successfully.
+2022-08-06 12:46:32 - INFO -  Creating pandas dataframe using the file content recieved.
+2022-08-06 12:46:32 - INFO -  Creating new column named sendemail.
+2022-08-06 12:46:32 - INFO -  sendemail column is True if birthday is today.
+2022-08-06 12:46:32 - INFO -  Sending email to ID 3
+2022-08-06 12:46:32 - INFO -  Creating a message.
+2022-08-06 12:46:32 - INFO -  Returning the message
+2022-08-06 12:46:32 - INFO -  Creating a session for sending email.
+2022-08-06 12:46:34 - INFO -  Email sent, quiting the session.
+2022-08-06 12:46:34 - INFO -  Whole process completed successfully.
