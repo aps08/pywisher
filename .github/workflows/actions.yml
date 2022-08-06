@@ -34,12 +34,13 @@ jobs:
           SEARCH_KEY: ${{ secrets.SEARCH_KEY }}
         run: python src/main.py
 
-      - name: commit files
+      - name: commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "${{ secrets.EMAIL }}"
+          git config --local user.name "aps08"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git commit -m "Commit from Github Actions"
+          git push
 
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
