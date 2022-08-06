@@ -44,6 +44,7 @@ class Pywisher(GetAttachMentService, SendEmailService):
             today = self.__now.strftime("%A")
             if today == "Saturday" and os.path.exists(log_file):
                 os.remove(log_file)
+                logging.config.fileConfig("logging.conf")
         except Exception as del_err:
             raise del_err
 
