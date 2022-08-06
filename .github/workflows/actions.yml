@@ -38,6 +38,7 @@ jobs:
         run: |
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.name "aps08"
+          ls -l
           git add .
           git commit -m "Commit from Github Actions"
           git push
