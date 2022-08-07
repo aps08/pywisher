@@ -1,5 +1,10 @@
 # pywisher
 
+pywisher is python scripts, which uses gmail to read records and send birthday wishes to all your friends.
+It it scheduled to run every day at 00:01 IST using github actions.
+
+# How to use
+
 ## Made with
 ![code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
