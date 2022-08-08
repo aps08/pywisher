@@ -10,7 +10,11 @@ For using this script, you require:
    - Birthday record.
 
 If you have the requirements completed, follow the steps below:
-  - Create password for an app. Save the password somewhere.
+  - Go to this [link](https://myaccount.google.com/).
+  - On the left hand side, click on ***security***.
+  - Under Signing in to Google click ***App passwords.***(*It will be visible only, if you have 2FA on*)
+  - In the next screen, under *Select app* option select **Other**, and type your app name as ***pywisher***.
+  - Click done, and in the next screen, you will get your pass code.
   - Using your gmail account, send yourself an email keeping birthday record as attchment, and keep a unique subject.
       - This unique subject will be used by the code to read the email from the inbox.
   - ***Fork*** this project.
