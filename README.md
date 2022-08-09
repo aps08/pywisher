@@ -14,7 +14,7 @@ pywisher is a python scripts, which uses gmail to read records and send birthday
 For using this script, you require:
    - Github Account.
    - Gmail Account.
-   - Birthday record (**in csv**).
+   - Birthday record (**in csv, as given in below image**).
 
 If you have the requirements completed, follow the steps below:
   - ### Gmail setup
