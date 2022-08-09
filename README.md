@@ -15,13 +15,25 @@ For using this script, you require:
    - Github Account.
    - Gmail Account.
    - Birthday record (**in csv, as given in below image**).
+   <img style="height:100%;width:50%;" src="./doc/images/1.png" alt="one">
 
 If you have the requirements completed, follow the steps below:
   - ### Gmail setup
-      - Go to this [link](https://myaccount.google.com/).
+      - Go to this [link](https://myaccount.google.com/). 
       - On the left hand side, click on ***security***.
+      
+         <img style="height:200px;" src="./doc/images/2.jpg" alt="two">
+         
       - Under Signing in to Google click ***App passwords.***(*It will be visible only, if you have 2FA on*)
+      
+         <img style="height:200px;" src="./doc/images/3.jpg" alt="three">
+      
       - In the next screen, under *Select app* option select **Other**, and type your app name as ***pywisher***.
+      
+         <img style="height:200px;" src="./doc/images/4.jpg" alt="three">
+         
+         <img style="height:200px;" src="./doc/images/5.jpg" alt="three">
+      
       - Click done, and in the next screen, you will get your pass code.
   - ### Birthday record setup
       - Using your gmail account, send yourself an email keeping birthday record as attchment, and keep a unique subject. (*This unique subject will be used by the code to read the email from the inbox.*)
