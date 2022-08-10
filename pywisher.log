@@ -72,3 +72,17 @@
 2022-08-09 18:49:19 - INFO -  sendemail column is True if birthday is today.
 2022-08-09 18:49:19 - INFO -  No birthday today.
 2022-08-09 18:49:19 - INFO -  Whole process completed successfully.
+2022-08-10 18:52:30 - INFO -  Pywisher class is initailised. Date 10-08-2022
+2022-08-10 18:52:30 - INFO -  GetAttachMentService class is initialised.
+2022-08-10 18:52:30 - INFO -  SendEmailService class is initialised.
+2022-08-10 18:52:30 - INFO -  Triggering the whole process.
+2022-08-10 18:52:35 - INFO -  Connection successful, searching email in inbox.
+2022-08-10 18:52:38 - INFO -  Email fetched successfully.
+2022-08-10 18:52:38 - INFO -  Converting bytes data to normal string.
+2022-08-10 18:52:38 - INFO -  Converting byte to string.
+2022-08-10 18:52:38 - INFO -  Extracted content of the file successfully.
+2022-08-10 18:52:38 - INFO -  Creating pandas dataframe using the file content recieved.
+2022-08-10 18:52:38 - INFO -  Creating new column named sendemail.
+2022-08-10 18:52:38 - INFO -  sendemail column is True if birthday is today.
+2022-08-10 18:52:38 - INFO -  No birthday today.
+2022-08-10 18:52:38 - INFO -  Whole process completed successfully.
