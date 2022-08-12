@@ -30,7 +30,7 @@ class Pywisher(GetAttachMentService, SendEmailService):
         self.__now = datetime.now()
         self.__delete_logger_weekly()
         logging.info(
-            " %s class is initailised. Date %s", Pywisher.__name__, self.__now.strftime("%d-%m-%Y")
+            " %s class is initailised. Datetime %s", Pywisher.__name__, self.__now
         )
         GetAttachMentService.__init__(self, username, password)
         SendEmailService.__init__(self, username, password)
