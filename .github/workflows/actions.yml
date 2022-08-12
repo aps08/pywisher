@@ -16,7 +16,6 @@ jobs:
         run: |
           sudo timedatectl set-timezone Asia/Kolkata
           sudo timedatectl set-ntp true
-          sudo systemctl restart systemd-timesyncd.service
           timedatectl 
     
       - name: checkout repository
