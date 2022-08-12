@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: set timezone
         run: |
-          timedatectl list-timezones | grep Asia/Kolkata
+          timedatectl set-timezone Asia/Kolkata
           timedatectl 
     
       - name: checkout repository
