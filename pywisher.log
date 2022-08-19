@@ -1,98 +1,14 @@
-2022-08-13 00:16:39 - INFO -  Pywisher class is initailised. Datetime 2022-08-13 00:16:39.921602
-2022-08-13 00:16:39 - INFO -  GetAttachMentService class is initialised.
-2022-08-13 00:16:39 - INFO -  SendEmailService class is initialised.
-2022-08-13 00:16:39 - INFO -  Triggering the whole process.
-2022-08-13 00:16:40 - INFO -  Connection successful, searching email in inbox.
-2022-08-13 00:16:41 - INFO -  Email fetched successfully.
-2022-08-13 00:16:41 - INFO -  Converting bytes data to normal string.
-2022-08-13 00:16:41 - INFO -  Converting byte to string.
-2022-08-13 00:16:41 - INFO -  Extracted content of the file successfully.
-2022-08-13 00:16:41 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-13 00:16:41 - INFO -  Creating new column named sendemail.
-2022-08-13 00:16:41 - INFO -  sendemail column is True if birthday is today.
-2022-08-13 00:16:41 - INFO -  No birthday today.
-2022-08-13 00:16:41 - INFO -  Whole process completed successfully.
-2022-08-14 00:13:59 - INFO -  Pywisher class is initailised. Datetime 2022-08-14 00:13:59.537103
-2022-08-14 00:13:59 - INFO -  GetAttachMentService class is initialised.
-2022-08-14 00:13:59 - INFO -  SendEmailService class is initialised.
-2022-08-14 00:13:59 - INFO -  Triggering the whole process.
-2022-08-14 00:14:00 - INFO -  Connection successful, searching email in inbox.
-2022-08-14 00:14:01 - INFO -  Email fetched successfully.
-2022-08-14 00:14:01 - INFO -  Converting bytes data to normal string.
-2022-08-14 00:14:01 - INFO -  Converting byte to string.
-2022-08-14 00:14:01 - INFO -  Extracted content of the file successfully.
-2022-08-14 00:14:01 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-14 00:14:01 - INFO -  Creating new column named sendemail.
-2022-08-14 00:14:01 - INFO -  sendemail column is True if birthday is today.
-2022-08-14 00:14:01 - INFO -  No birthday today.
-2022-08-14 00:14:01 - INFO -  Whole process completed successfully.
-2022-08-15 00:14:01 - INFO -  Pywisher class is initailised. Datetime 2022-08-15 00:14:01.478778
-2022-08-15 00:14:01 - INFO -  GetAttachMentService class is initialised.
-2022-08-15 00:14:01 - INFO -  SendEmailService class is initialised.
-2022-08-15 00:14:01 - INFO -  Triggering the whole process.
-2022-08-15 00:14:03 - INFO -  Connection successful, searching email in inbox.
-2022-08-15 00:14:04 - INFO -  Email fetched successfully.
-2022-08-15 00:14:04 - INFO -  Converting bytes data to normal string.
-2022-08-15 00:14:04 - INFO -  Converting byte to string.
-2022-08-15 00:14:04 - INFO -  Extracted content of the file successfully.
-2022-08-15 00:14:04 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-15 00:14:04 - INFO -  Creating new column named sendemail.
-2022-08-15 00:14:04 - INFO -  sendemail column is True if birthday is today.
-2022-08-15 00:14:04 - INFO -  No birthday today.
-2022-08-15 00:14:04 - INFO -  Whole process completed successfully.
-2022-08-16 00:18:13 - INFO -  Pywisher class is initailised. Datetime 2022-08-16 00:18:13.641056
-2022-08-16 00:18:13 - INFO -  GetAttachMentService class is initialised.
-2022-08-16 00:18:13 - INFO -  SendEmailService class is initialised.
-2022-08-16 00:18:13 - INFO -  Triggering the whole process.
-2022-08-16 00:18:14 - INFO -  Connection successful, searching email in inbox.
-2022-08-16 00:18:15 - INFO -  Email fetched successfully.
-2022-08-16 00:18:15 - INFO -  Converting bytes data to normal string.
-2022-08-16 00:18:15 - INFO -  Converting byte to string.
-2022-08-16 00:18:15 - INFO -  Extracted content of the file successfully.
-2022-08-16 00:18:15 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-16 00:18:15 - INFO -  Creating new column named sendemail.
-2022-08-16 00:18:15 - INFO -  sendemail column is True if birthday is today.
-2022-08-16 00:18:15 - INFO -  No birthday today.
-2022-08-16 00:18:15 - INFO -  Whole process completed successfully.
-2022-08-17 00:18:34 - INFO -  Pywisher class is initailised. Datetime 2022-08-17 00:18:34.300916
-2022-08-17 00:18:34 - INFO -  GetAttachMentService class is initialised.
-2022-08-17 00:18:34 - INFO -  SendEmailService class is initialised.
-2022-08-17 00:18:34 - INFO -  Triggering the whole process.
-2022-08-17 00:18:35 - INFO -  Connection successful, searching email in inbox.
-2022-08-17 00:18:36 - INFO -  Email fetched successfully.
-2022-08-17 00:18:36 - INFO -  Converting bytes data to normal string.
-2022-08-17 00:18:36 - INFO -  Converting byte to string.
-2022-08-17 00:18:36 - INFO -  Extracted content of the file successfully.
-2022-08-17 00:18:36 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-17 00:18:36 - INFO -  Creating new column named sendemail.
-2022-08-17 00:18:36 - INFO -  sendemail column is True if birthday is today.
-2022-08-17 00:18:36 - INFO -  No birthday today.
-2022-08-17 00:18:36 - INFO -  Whole process completed successfully.
-2022-08-18 00:18:08 - INFO -  Pywisher class is initailised. Datetime 2022-08-18 00:18:08.067475
-2022-08-18 00:18:08 - INFO -  GetAttachMentService class is initialised.
-2022-08-18 00:18:08 - INFO -  SendEmailService class is initialised.
-2022-08-18 00:18:08 - INFO -  Triggering the whole process.
-2022-08-18 00:18:09 - INFO -  Connection successful, searching email in inbox.
-2022-08-18 00:18:10 - INFO -  Email fetched successfully.
-2022-08-18 00:18:10 - INFO -  Converting bytes data to normal string.
-2022-08-18 00:18:10 - INFO -  Converting byte to string.
-2022-08-18 00:18:10 - INFO -  Extracted content of the file successfully.
-2022-08-18 00:18:10 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-18 00:18:10 - INFO -  Creating new column named sendemail.
-2022-08-18 00:18:10 - INFO -  sendemail column is True if birthday is today.
-2022-08-18 00:18:10 - INFO -  No birthday today.
-2022-08-18 00:18:10 - INFO -  Whole process completed successfully.
-2022-08-19 00:16:01 - INFO -  Pywisher class is initailised. Datetime 2022-08-19 00:16:01.361474
-2022-08-19 00:16:01 - INFO -  GetAttachMentService class is initialised.
-2022-08-19 00:16:01 - INFO -  SendEmailService class is initialised.
-2022-08-19 00:16:01 - INFO -  Triggering the whole process.
-2022-08-19 00:16:02 - INFO -  Connection successful, searching email in inbox.
-2022-08-19 00:16:03 - INFO -  Email fetched successfully.
-2022-08-19 00:16:03 - INFO -  Converting bytes data to normal string.
-2022-08-19 00:16:03 - INFO -  Converting byte to string.
-2022-08-19 00:16:03 - INFO -  Extracted content of the file successfully.
-2022-08-19 00:16:03 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-08-19 00:16:03 - INFO -  Creating new column named sendemail.
-2022-08-19 00:16:03 - INFO -  sendemail column is True if birthday is today.
-2022-08-19 00:16:03 - INFO -  No birthday today.
-2022-08-19 00:16:03 - INFO -  Whole process completed successfully.
+2022-08-20 00:20:05 - INFO -  Pywisher class is initailised. Datetime 2022-08-20 00:20:05.424825
+2022-08-20 00:20:05 - INFO -  GetAttachMentService class is initialised.
+2022-08-20 00:20:05 - INFO -  SendEmailService class is initialised.
+2022-08-20 00:20:05 - INFO -  Triggering the whole process.
+2022-08-20 00:20:07 - INFO -  Connection successful, searching email in inbox.
+2022-08-20 00:20:07 - INFO -  Email fetched successfully.
+2022-08-20 00:20:07 - INFO -  Converting bytes data to normal string.
+2022-08-20 00:20:07 - INFO -  Converting byte to string.
+2022-08-20 00:20:07 - INFO -  Extracted content of the file successfully.
+2022-08-20 00:20:07 - INFO -  Creating pandas dataframe using the file content recieved.
+2022-08-20 00:20:07 - INFO -  Creating new column named sendemail.
+2022-08-20 00:20:07 - INFO -  sendemail column is True if birthday is today.
+2022-08-20 00:20:07 - INFO -  No birthday today.
+2022-08-20 00:20:07 - INFO -  Whole process completed successfully.
