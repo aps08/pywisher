@@ -138,3 +138,15 @@
 2022-08-25 23:43:03 - INFO -  sendemail column is True if birthday is today.
 2022-08-25 23:43:03 - INFO -  No birthday today.
 2022-08-25 23:43:03 - INFO -  Whole process completed successfully.
+2022-08-25 23:52:16 - INFO -  Pywisher class is initailised. Datetime 2022-08-25 23:52:16.245283
+2022-08-25 23:52:16 - INFO -  GetAttachMentService class is initialised.
+2022-08-25 23:52:16 - INFO -  SendEmailService class is initialised.
+2022-08-25 23:52:16 - INFO -  Triggering the whole process.
+2022-08-25 23:52:16 - ERROR -  Error in __get_email_in_bytes
+'NoneType' object has no attribute 'replace'
+2022-08-25 23:52:16 - ERROR -  Error in save
+'NoneType' object has no attribute 'replace'
+2022-08-25 23:52:16 - ERROR -  Error in __download_and_read
+'NoneType' object has no attribute 'replace'
+2022-08-25 23:52:16 - ERROR -  Error in start
+'NoneType' object has no attribute 'replace'
