@@ -84,13 +84,12 @@ class Pywisher(GetAttachMentService, SendEmailService):
             data["dob"] = pd.to_datetime(data["dob"], format="%d-%m-%Y")
             data["day"] = data["dob"].dt.day.astype(int)
             data["month"] = data["dob"].dt.month.astype(int)
-            condition = ((day == data["day"]) & (month == data["month"]))
             logging.info(" Creating new column named sendemail.")
             logging.info(" sendemail column is True if birthday is today.")
-            data["sendemail"] = condition
+            data["sendemail"] = (day == data["day"] & month === data["month"])
             itr_data = data.query("sendemail==True")
             nums = len(itr_data)
-            print(data)
+            print(data["sendemail"])
             if nums > 0:
                 for index, row in itr_data.iterrows():
                     logging.info(" Sending email to ID %s", index)
