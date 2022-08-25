@@ -85,7 +85,7 @@ class Pywisher(GetAttachMentService, SendEmailService):
             logging.info(" Creating new column named sendemail.")
             logging.info(" sendemail column is True if birthday is today.")
             for index, row in data.iterrows():
-                if day == row["dob"].day and month == data["dob"].month:
+                if day == row["dob"].day and month == row["dob"].month:
                     row["sendemail"] = True
                 else:
                     row["sendemail"] = False
