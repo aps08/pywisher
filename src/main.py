@@ -84,23 +84,10 @@ class Pywisher(GetAttachMentService, SendEmailService):
             data["dob"] = pd.to_datetime(data["dob"], format="%d-%m-%Y")
             logging.info(" Creating new column named sendemail.")
             logging.info(" sendemail column is True if birthday is today.")
-            data["sendemail"] = data["dob"].apply(lambda date: True if (day == date.day and month == date.month) else False)
-            # for index, row in data.iterrows():
-            #     if day == row["dob"].day and month == row["dob"].month:
-            #         row["sendemail"] = True
-            #     else:
-            #         row["sendemail"] = False
-            print(data)
-            itr_data = data.query("sendemail==True")
-            nums = len(itr_data)
-            print(data["sendemail"])
-            if nums > 0:
-                for index, row in itr_data.iterrows():
+            for index, row in data.iterrows():
+                if day == row["dob"].day and month == row["dob"].month:
                     logging.info(" Sending email to ID %s", index)
-                    print("yes")
-#                     self.send(row["email"], "Happy Birthday " + row["firstname"])
-            else:
-                logging.info(" No birthday today.")
+                    self.send(row["email"], "Happy Birthday " + row["firstname"])
         except Exception as proc_err:
             raise proc_err
 
