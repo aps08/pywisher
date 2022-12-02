@@ -1,84 +1,12 @@
-2022-11-26 00:11:29 - INFO -  Pywisher class is initailised. Datetime 2022-11-26 00:11:29.665543
-2022-11-26 00:11:29 - INFO -  GetAttachMentService class is initialised.
-2022-11-26 00:11:29 - INFO -  SendEmailService class is initialised.
-2022-11-26 00:11:29 - INFO -  Triggering the whole process.
-2022-11-26 00:11:30 - INFO -  Connection successful, searching email in inbox.
-2022-11-26 00:11:31 - INFO -  Email fetched successfully.
-2022-11-26 00:11:31 - INFO -  Converting bytes data to normal string.
-2022-11-26 00:11:31 - INFO -  Converting byte to string.
-2022-11-26 00:11:31 - INFO -  Extracted content of the file successfully.
-2022-11-26 00:11:31 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-11-26 00:11:31 - INFO -  Iterating the data.
-2022-11-26 00:11:31 - INFO -  Whole process completed successfully.
-2022-11-27 00:09:57 - INFO -  Pywisher class is initailised. Datetime 2022-11-27 00:09:57.741402
-2022-11-27 00:09:57 - INFO -  GetAttachMentService class is initialised.
-2022-11-27 00:09:57 - INFO -  SendEmailService class is initialised.
-2022-11-27 00:09:57 - INFO -  Triggering the whole process.
-2022-11-27 00:09:58 - INFO -  Connection successful, searching email in inbox.
-2022-11-27 00:09:59 - INFO -  Email fetched successfully.
-2022-11-27 00:09:59 - INFO -  Converting bytes data to normal string.
-2022-11-27 00:09:59 - INFO -  Converting byte to string.
-2022-11-27 00:09:59 - INFO -  Extracted content of the file successfully.
-2022-11-27 00:09:59 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-11-27 00:09:59 - INFO -  Iterating the data.
-2022-11-27 00:09:59 - INFO -  Whole process completed successfully.
-2022-11-28 00:09:49 - INFO -  Pywisher class is initailised. Datetime 2022-11-28 00:09:49.397997
-2022-11-28 00:09:49 - INFO -  GetAttachMentService class is initialised.
-2022-11-28 00:09:49 - INFO -  SendEmailService class is initialised.
-2022-11-28 00:09:49 - INFO -  Triggering the whole process.
-2022-11-28 00:09:50 - INFO -  Connection successful, searching email in inbox.
-2022-11-28 00:09:50 - INFO -  Email fetched successfully.
-2022-11-28 00:09:50 - INFO -  Converting bytes data to normal string.
-2022-11-28 00:09:50 - INFO -  Converting byte to string.
-2022-11-28 00:09:50 - INFO -  Extracted content of the file successfully.
-2022-11-28 00:09:50 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-11-28 00:09:50 - INFO -  Iterating the data.
-2022-11-28 00:09:50 - INFO -  Whole process completed successfully.
-2022-11-29 00:12:21 - INFO -  Pywisher class is initailised. Datetime 2022-11-29 00:12:21.959782
-2022-11-29 00:12:22 - INFO -  GetAttachMentService class is initialised.
-2022-11-29 00:12:22 - INFO -  SendEmailService class is initialised.
-2022-11-29 00:12:22 - INFO -  Triggering the whole process.
-2022-11-29 00:12:23 - INFO -  Connection successful, searching email in inbox.
-2022-11-29 00:12:23 - INFO -  Email fetched successfully.
-2022-11-29 00:12:23 - INFO -  Converting bytes data to normal string.
-2022-11-29 00:12:23 - INFO -  Converting byte to string.
-2022-11-29 00:12:23 - INFO -  Extracted content of the file successfully.
-2022-11-29 00:12:23 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-11-29 00:12:23 - INFO -  Iterating the data.
-2022-11-29 00:12:23 - INFO -  Whole process completed successfully.
-2022-11-30 00:10:59 - INFO -  Pywisher class is initailised. Datetime 2022-11-30 00:10:59.684147
-2022-11-30 00:10:59 - INFO -  GetAttachMentService class is initialised.
-2022-11-30 00:10:59 - INFO -  SendEmailService class is initialised.
-2022-11-30 00:10:59 - INFO -  Triggering the whole process.
-2022-11-30 00:11:00 - INFO -  Connection successful, searching email in inbox.
-2022-11-30 00:11:01 - INFO -  Email fetched successfully.
-2022-11-30 00:11:01 - INFO -  Converting bytes data to normal string.
-2022-11-30 00:11:01 - INFO -  Converting byte to string.
-2022-11-30 00:11:01 - INFO -  Extracted content of the file successfully.
-2022-11-30 00:11:01 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-11-30 00:11:01 - INFO -  Iterating the data.
-2022-11-30 00:11:01 - INFO -  Whole process completed successfully.
-2022-12-01 00:12:41 - INFO -  Pywisher class is initailised. Datetime 2022-12-01 00:12:41.695442
-2022-12-01 00:12:41 - INFO -  GetAttachMentService class is initialised.
-2022-12-01 00:12:41 - INFO -  SendEmailService class is initialised.
-2022-12-01 00:12:41 - INFO -  Triggering the whole process.
-2022-12-01 00:12:42 - INFO -  Connection successful, searching email in inbox.
-2022-12-01 00:12:43 - INFO -  Email fetched successfully.
-2022-12-01 00:12:43 - INFO -  Converting bytes data to normal string.
-2022-12-01 00:12:43 - INFO -  Converting byte to string.
-2022-12-01 00:12:43 - INFO -  Extracted content of the file successfully.
-2022-12-01 00:12:43 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-12-01 00:12:43 - INFO -  Iterating the data.
-2022-12-01 00:12:43 - INFO -  Whole process completed successfully.
-2022-12-02 00:12:32 - INFO -  Pywisher class is initailised. Datetime 2022-12-02 00:12:32.923869
-2022-12-02 00:12:33 - INFO -  GetAttachMentService class is initialised.
-2022-12-02 00:12:33 - INFO -  SendEmailService class is initialised.
-2022-12-02 00:12:33 - INFO -  Triggering the whole process.
-2022-12-02 00:12:34 - INFO -  Connection successful, searching email in inbox.
-2022-12-02 00:12:34 - INFO -  Email fetched successfully.
-2022-12-02 00:12:34 - INFO -  Converting bytes data to normal string.
-2022-12-02 00:12:34 - INFO -  Converting byte to string.
-2022-12-02 00:12:34 - INFO -  Extracted content of the file successfully.
-2022-12-02 00:12:34 - INFO -  Creating pandas dataframe using the file content recieved.
-2022-12-02 00:12:34 - INFO -  Iterating the data.
-2022-12-02 00:12:34 - INFO -  Whole process completed successfully.
+2022-12-03 00:08:59 - INFO -  Pywisher class is initailised. Datetime 2022-12-03 00:08:59.827945
+2022-12-03 00:09:00 - INFO -  GetAttachMentService class is initialised.
+2022-12-03 00:09:00 - INFO -  SendEmailService class is initialised.
+2022-12-03 00:09:00 - INFO -  Triggering the whole process.
+2022-12-03 00:09:01 - INFO -  Connection successful, searching email in inbox.
+2022-12-03 00:09:01 - INFO -  Email fetched successfully.
+2022-12-03 00:09:01 - INFO -  Converting bytes data to normal string.
+2022-12-03 00:09:01 - INFO -  Converting byte to string.
+2022-12-03 00:09:01 - INFO -  Extracted content of the file successfully.
+2022-12-03 00:09:01 - INFO -  Creating pandas dataframe using the file content recieved.
+2022-12-03 00:09:01 - INFO -  Iterating the data.
+2022-12-03 00:09:01 - INFO -  Whole process completed successfully.
