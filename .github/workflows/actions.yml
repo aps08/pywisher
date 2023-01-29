@@ -27,9 +27,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          echo "${{ github.actor }}"
-          echo "${{ github.job }}"
-          echo "${{ github.run_id }}"
 
       - name: execute main.py
         env:
@@ -40,8 +37,8 @@ jobs:
 
       - name: commit changes
         run: |
-          git config --local user.email "${{ secrets.EMAIL }}"
+          git config --local user.email "aps08@users.noreply.github.com"
           git config --local user.name "aps08"
-          git add .
-          git commit -m "Commit from Github Actions"
-          git push -f origin main
+          git add -A
+          git commit -m "Automated Commit"
+          git push
