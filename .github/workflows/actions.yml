@@ -20,6 +20,10 @@ jobs:
 
       - name: checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+          token: ${{ secrets.PUSH_TOKEN }}
 
       - name: setup python
         uses: actions/setup-python@v4
@@ -44,10 +48,4 @@ jobs:
           git config --local user.name "aps08"
           git add -A
           git commit -m "Automated Commit"
-          git push https://{{ secrets.PUSH_TOKEN }}@github.com/aps08/pywisher.git
-          
-#       - name: Pushing back to the repository
-#         uses: CasperWA/push-protected@v2
-#         with:
-#           token: ${{ secrets.PUSH_TOKEN }}
-#           branch: main
+          git push
