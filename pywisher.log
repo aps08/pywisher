@@ -10,3 +10,15 @@
 2024-01-06 00:05:54 - INFO -  Creating pandas dataframe using the file content recieved.
 2024-01-06 00:05:54 - INFO -  Iterating the data.
 2024-01-06 00:05:54 - INFO -  Whole process completed successfully.
+2024-01-07 00:05:33 - INFO -  Pywisher class is initailised. Datetime 2024-01-07 00:05:33.885912
+2024-01-07 00:05:34 - INFO -  GetAttachMentService class is initialised.
+2024-01-07 00:05:34 - INFO -  SendEmailService class is initialised.
+2024-01-07 00:05:34 - INFO -  Triggering the whole process.
+2024-01-07 00:05:34 - INFO -  Connection successful, searching email in inbox.
+2024-01-07 00:05:35 - INFO -  Email fetched successfully.
+2024-01-07 00:05:35 - INFO -  Converting bytes data to normal string.
+2024-01-07 00:05:35 - INFO -  Converting byte to string.
+2024-01-07 00:05:35 - INFO -  Extracted content of the file successfully.
+2024-01-07 00:05:35 - INFO -  Creating pandas dataframe using the file content recieved.
+2024-01-07 00:05:35 - INFO -  Iterating the data.
+2024-01-07 00:05:35 - INFO -  Whole process completed successfully.
