@@ -1,89 +1,12 @@
-2024-02-10 00:02:59 - INFO -  Pywisher class is initailised. Datetime 2024-02-10 00:02:59.333270
-2024-02-10 00:02:59 - INFO -  GetAttachMentService class is initialised.
-2024-02-10 00:02:59 - INFO -  SendEmailService class is initialised.
-2024-02-10 00:02:59 - INFO -  Triggering the whole process.
-2024-02-10 00:02:59 - INFO -  Connection successful, searching email in inbox.
-2024-02-10 00:03:00 - INFO -  Email fetched successfully.
-2024-02-10 00:03:00 - INFO -  Converting bytes data to normal string.
-2024-02-10 00:03:00 - INFO -  Converting byte to string.
-2024-02-10 00:03:00 - INFO -  Extracted content of the file successfully.
-2024-02-10 00:03:00 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-10 00:03:00 - INFO -  Iterating the data.
-2024-02-10 00:03:00 - INFO -  Whole process completed successfully.
-2024-02-11 00:03:39 - INFO -  Pywisher class is initailised. Datetime 2024-02-11 00:03:39.293541
-2024-02-11 00:03:39 - INFO -  GetAttachMentService class is initialised.
-2024-02-11 00:03:39 - INFO -  SendEmailService class is initialised.
-2024-02-11 00:03:39 - INFO -  Triggering the whole process.
-2024-02-11 00:03:39 - INFO -  Connection successful, searching email in inbox.
-2024-02-11 00:03:40 - INFO -  Email fetched successfully.
-2024-02-11 00:03:40 - INFO -  Converting bytes data to normal string.
-2024-02-11 00:03:40 - INFO -  Converting byte to string.
-2024-02-11 00:03:40 - INFO -  Extracted content of the file successfully.
-2024-02-11 00:03:40 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-11 00:03:40 - INFO -  Iterating the data.
-2024-02-11 00:03:40 - INFO -  Whole process completed successfully.
-2024-02-12 00:02:56 - INFO -  Pywisher class is initailised. Datetime 2024-02-12 00:02:56.802508
-2024-02-12 00:02:56 - INFO -  GetAttachMentService class is initialised.
-2024-02-12 00:02:56 - INFO -  SendEmailService class is initialised.
-2024-02-12 00:02:56 - INFO -  Triggering the whole process.
-2024-02-12 00:02:57 - INFO -  Connection successful, searching email in inbox.
-2024-02-12 00:02:57 - INFO -  Email fetched successfully.
-2024-02-12 00:02:57 - INFO -  Converting bytes data to normal string.
-2024-02-12 00:02:57 - INFO -  Converting byte to string.
-2024-02-12 00:02:57 - INFO -  Extracted content of the file successfully.
-2024-02-12 00:02:57 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-12 00:02:57 - INFO -  Iterating the data.
-2024-02-12 00:02:57 - INFO -  Whole process completed successfully.
-2024-02-13 00:03:08 - INFO -  Pywisher class is initailised. Datetime 2024-02-13 00:03:08.757675
-2024-02-13 00:03:08 - INFO -  GetAttachMentService class is initialised.
-2024-02-13 00:03:08 - INFO -  SendEmailService class is initialised.
-2024-02-13 00:03:08 - INFO -  Triggering the whole process.
-2024-02-13 00:03:09 - INFO -  Connection successful, searching email in inbox.
-2024-02-13 00:03:09 - INFO -  Email fetched successfully.
-2024-02-13 00:03:09 - INFO -  Converting bytes data to normal string.
-2024-02-13 00:03:09 - INFO -  Converting byte to string.
-2024-02-13 00:03:09 - INFO -  Extracted content of the file successfully.
-2024-02-13 00:03:09 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-13 00:03:09 - INFO -  Iterating the data.
-2024-02-13 00:03:09 - INFO -  Whole process completed successfully.
-2024-02-14 00:03:34 - INFO -  Pywisher class is initailised. Datetime 2024-02-14 00:03:34.770658
-2024-02-14 00:03:34 - INFO -  GetAttachMentService class is initialised.
-2024-02-14 00:03:34 - INFO -  SendEmailService class is initialised.
-2024-02-14 00:03:34 - INFO -  Triggering the whole process.
-2024-02-14 00:03:35 - INFO -  Connection successful, searching email in inbox.
-2024-02-14 00:03:35 - INFO -  Email fetched successfully.
-2024-02-14 00:03:35 - INFO -  Converting bytes data to normal string.
-2024-02-14 00:03:35 - INFO -  Converting byte to string.
-2024-02-14 00:03:35 - INFO -  Extracted content of the file successfully.
-2024-02-14 00:03:35 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-14 00:03:35 - INFO -  Iterating the data.
-2024-02-14 00:03:35 - INFO -  Whole process completed successfully.
-2024-02-15 00:03:47 - INFO -  Pywisher class is initailised. Datetime 2024-02-15 00:03:47.910103
-2024-02-15 00:03:48 - INFO -  GetAttachMentService class is initialised.
-2024-02-15 00:03:48 - INFO -  SendEmailService class is initialised.
-2024-02-15 00:03:48 - INFO -  Triggering the whole process.
-2024-02-15 00:03:48 - INFO -  Connection successful, searching email in inbox.
-2024-02-15 00:03:49 - INFO -  Email fetched successfully.
-2024-02-15 00:03:49 - INFO -  Converting bytes data to normal string.
-2024-02-15 00:03:49 - INFO -  Converting byte to string.
-2024-02-15 00:03:49 - INFO -  Extracted content of the file successfully.
-2024-02-15 00:03:49 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-15 00:03:49 - INFO -  Iterating the data.
-2024-02-15 00:03:49 - INFO -  Whole process completed successfully.
-2024-02-16 00:02:53 - INFO -  Pywisher class is initailised. Datetime 2024-02-16 00:02:53.181837
-2024-02-16 00:02:53 - INFO -  GetAttachMentService class is initialised.
-2024-02-16 00:02:53 - INFO -  SendEmailService class is initialised.
-2024-02-16 00:02:53 - INFO -  Triggering the whole process.
-2024-02-16 00:02:54 - INFO -  Connection successful, searching email in inbox.
-2024-02-16 00:02:54 - INFO -  Email fetched successfully.
-2024-02-16 00:02:54 - INFO -  Converting bytes data to normal string.
-2024-02-16 00:02:54 - INFO -  Converting byte to string.
-2024-02-16 00:02:54 - INFO -  Extracted content of the file successfully.
-2024-02-16 00:02:54 - INFO -  Creating pandas dataframe using the file content recieved.
-2024-02-16 00:02:54 - INFO -  Iterating the data.
-2024-02-16 00:02:54 - INFO -  Sending email to ID 8
-2024-02-16 00:02:54 - INFO -  Creating a message.
-2024-02-16 00:02:54 - INFO -  Returning the message
-2024-02-16 00:02:54 - INFO -  Creating a session for sending email.
-2024-02-16 00:02:55 - INFO -  Email sent, quiting the session.
-2024-02-16 00:02:55 - INFO -  Whole process completed successfully.
+2024-02-17 00:02:54 - INFO -  Pywisher class is initailised. Datetime 2024-02-17 00:02:54.946982
+2024-02-17 00:02:54 - INFO -  GetAttachMentService class is initialised.
+2024-02-17 00:02:54 - INFO -  SendEmailService class is initialised.
+2024-02-17 00:02:54 - INFO -  Triggering the whole process.
+2024-02-17 00:02:55 - INFO -  Connection successful, searching email in inbox.
+2024-02-17 00:02:55 - INFO -  Email fetched successfully.
+2024-02-17 00:02:55 - INFO -  Converting bytes data to normal string.
+2024-02-17 00:02:55 - INFO -  Converting byte to string.
+2024-02-17 00:02:55 - INFO -  Extracted content of the file successfully.
+2024-02-17 00:02:55 - INFO -  Creating pandas dataframe using the file content recieved.
+2024-02-17 00:02:55 - INFO -  Iterating the data.
+2024-02-17 00:02:55 - INFO -  Whole process completed successfully.
